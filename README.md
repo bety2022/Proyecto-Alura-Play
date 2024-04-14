@@ -11,7 +11,7 @@ un menú lateral, una sección superior, tenemos la sección de videos y un pie 
 El proyecto se realizo trabajando con lo que es Flexbox, también responsividad y algunas propiedades de CSS.
 
 <p align="center" >
-     <img width="400" heigth="300" src="https://github.com/bety2022/Encriptador/blob/main/insignia_reto.png">
+     <img width="400" heigth="300" src="img/cabecera/Portada.png">
 </p>
 
 
