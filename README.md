@@ -38,7 +38,7 @@ El proyecto se realizo trabajando con lo que es Flexbox, también responsividad 
 
 <div align="center">
     <a href="https://skillicons.dev">
-      <img src="https://skillicons.dev/icons?i=Flexbox,Layouts,css,html,js,git,github,figma" />
+      <img src="https://skillicons.dev/icons?i=flexbox,layouts,css,html,js,git,github,figma" />
     </a>
 </div>
 <br />
