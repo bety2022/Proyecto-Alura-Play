@@ -21,7 +21,7 @@ El proyecto se realizo trabajando con lo que es Flexbox, también responsividad 
 ## 🔎 Deploy
 <div align="center">
   <h3>
-    <a href="https://github.com/bety2022/Proyecto-Alura-Play/blob/main/index.html" >
+    <a href="https://bety2022.github.io/Proyecto-Alura-Play/" >
       🔗 Visitar Plataforma de videos de Alura Play
     </a>
 </div>
