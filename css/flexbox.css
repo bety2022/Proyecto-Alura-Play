@@ -1,0 +1,190 @@
+/* Cabecera */
+.cabecera__container{
+    display: flex;
+    justify-content: space-between; /*Puedo colocar espacios*/
+    align-items: center; /*Valores se centren*/
+    position: fixed; /*Posiciòn quede fija*/
+    top: 0; /*eje fijo */
+}
+
+.cabecera__buscar__item{
+    display: none;  /*Ocultar este campo de busqueda solo para dispositivos moviles*/
+}
+
+/* Menu */
+
+.menu__container{
+    position: fixed; /*posicion para moviles esttica */
+    bottom: 0%; /* Colocar en la parte inferior del proyecto */
+    height: 75px; /* Hay que disminuir la altura del contenedor */
+    width: 100%; /* Necesitamos que abarque todo el body */
+}
+
+.menu__lista{
+    display: flex; /* Colocar los elementos uno al lado del otro */
+    justify-content: space-around; /* Los elementos tienen espacio entre cada uno de ellos */
+    height: 100%; /* Ubicar los elementos */
+}
+/* Coloco los elementos a trabajar li que esta dentro del menu lista */
+.menu__lista li {
+    align-self: center; /* Me centra todos los elementos dentro del contenedor */
+}
+/* Alinear el icono que quede encima de la letra */
+.menu__itens{
+    display: flex; /* Coloca los textos al lado */
+    flex-direction: column; /* La direccion de los elementos sea en columna */
+    gap: 5px; /* Le damos un espacio pequeño de 5px */
+}
+
+/* Hay que crear una pseudo-clase ocupar los elementos hermanos */
+.menu__lista:nth-child(2),
+.menu__lista:nth-child(3),
+.menu__lista:nth-child(4){
+    display: none; /* Se ocultan las demas listas */
+}
+
+
+/* Seccion Superior */ /* Los elementos se colocan uno al lado del otro */
+.superior__seccion__container{
+    display: flex;
+    align-items: center; /* Alinear los elementos */
+    white-space: nowrap; /* Alinear los textos y no se quiebren dentro de los elementos */
+    overflow: scroll; /* Tener una barra de deslizamiento en el menu */
+    gap: 15px; /* Agregar espacio dentro de los elementos con la propiedad especifica para todos */
+
+}
+
+/* Seccion Videos */
+/* Organizar videos en forma de tarjeta */
+.videos__item{
+    height: 303px;
+    width: 280px;
+    flex-grow: 1;/* Quitar el espacio del lado derecho */
+}
+
+.videos__container{
+    display: flex; /* Los videos se ubican uno al lado delotro */
+    flex-wrap: wrap;/* Videos se distribuyan */
+    gap: 10px;
+
+}
+
+
+/* DESAFIO DESCRIPCIÓN DE LOS VIDEOS */ 
+
+.descripcion-video {
+    margin-top: 1rem;
+    display: flex;
+    align-items: start; 
+    
+}
+
+.descripcion-video img {
+    margin-right: 1rem; 
+    flex-shrink: 0;  /*  Evita que la imagen se reduzca */
+    
+}
+
+.detalles__video {
+    flex-direction: column;
+    text-align:left;
+
+}
+
+.detalles__video h3{
+    margin-bottom: 10px;
+}
+
+
+/* Rodapie */
+.rodapie__container{
+    display: flex; /*Ajuste de columnas y filas */
+    /* flex-direction: column;
+    flex-wrap: wrap; /*Ajustar los elementos en dos columnas Juntamos 2 propiedades en una sola*/
+    flex-flow: column wrap;
+
+}
+
+
+
+@media (min-width:834px) {
+/*Solo se muestre cuando el dispositivo sea de 834px, Puntos de ruptura para que se cumpla una condiciòn*/
+/* Cabecera */
+    .cabecera__buscar__item{
+        display: block;
+    }
+/* Desafìo Menù Lateral */
+    .menu__container {
+        left: 0;
+        height: auto;
+        width: 74px;
+        top: 80px;
+    }
+
+    .menu__lista {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 15px;
+        gap: 33px;
+    }
+
+    
+    /* Rodapie */
+    .rodapie__container{
+        justify-content: space-between;
+    }
+
+    
+}
+
+@media (min-width:1440px ){
+
+    .menu__container{
+        width: 239px;
+        overflow: scroll; /* Deslizar las listas */
+
+    }
+
+    .menu__lista:nth-child(2),
+    .menu__lista:nth-child(3),
+    .menu__lista:nth-child(4){
+        display: flex; /* Se ven las demas listas */
+    }
+
+    .menu__lista{
+        height: auto; /* Se visualizan los elementos */
+        padding: 20px 17px 20px 15px; /* Aplicar efecto solo al menu */
+        gap: 15px; /* Colocar los elementos mas cerca */
+
+    }
+
+    .menu__lista:nth-child(3){
+        flex-direction: column-reverse; /* Ordenar las listas - invertir */
+      
+    }
+    .menu__itens{
+        flex-direction: row;/* Colocar el texto uno al lado del otro */
+        gap: 15px; /* Espacio al elemento (icono del texto)*/
+        align-items: center; /* Alinear el texto */ 
+    }
+
+    .videojuegos{
+        order: 3; /*Ordenar posicion de los elementos */
+    }
+
+    .peliculas{
+        order: 2; /*Ordenar posicion de los elementos */
+    }
+
+    .premium{
+    order: 1; /*Ordenar posicion de los elementos */
+    }
+
+
+
+
+
+
+
+}
+
