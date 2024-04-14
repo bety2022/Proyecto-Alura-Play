@@ -14,17 +14,6 @@ El proyecto se realizo trabajando con lo que es Flexbox, también responsividad 
      <img width="1000" heigth="800" src="img/cabecera/Portada.png">
 </p>
 
-
-### ¡Bienvenido a la Plataforma de videos de Alura Play!
-
----
-
-
-
-<p align="center" >
-     <img width="400" heigth="300" src="https://user-images.githubusercontent.com/91544872/157673573-5e781ce9-601c-4ea3-9db1-b60bebf717aa.png">
-</p>
-
 <br />
   ❤️ ESTADO: Finalizado
 <br />
