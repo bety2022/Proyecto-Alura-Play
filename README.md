@@ -1,7 +1,9 @@
 <h1 align="center"> PROYECTO ALURA PLAY ONE - ALURA </h1>
 
+<h1 align="center"> Front End G6 - ONE </h1>
 
-# Curso de CSS, Flexbox y Layouts responsivos | Front End G6 - ONE 
+
+# Curso de CSS, Flexbox y Layouts responsivos  
 
 
 👩‍💻 💻 Desarrollo del proyecto Alura Play: "Plataforma de videos"   
